@@ -8,7 +8,7 @@ import { feedQuery, serachQuery } from "../utils/data";
 
 const Feed = () => {
   const [loading, setLoading] = useState(false);
-  const [pins, setPins] = useState(null);
+  const [pins, setPins] = useState();
   const { categoryId } = useParams();
 
   useEffect(() => {
